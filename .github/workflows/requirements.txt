@@ -1,9 +1,9 @@
-fastapi
-uvicorn[standard]
-pytest
-httpx
-mypy
-isort
-flake8
-black
+fastapi==0.129.0
+mypy==1.19.1
+black==26.1.0
+flake8==4.0.1
+isort==7.0.0
+flake8-pie==0.15.0
+flake-bugbear==22.1.11
+
 
