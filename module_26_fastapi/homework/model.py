@@ -10,3 +10,4 @@ class Recipe(Base):
     ingredients = Column(String, nullable=False)
     description = Column(String, nullable=False)
     vies = Column(Integer, default=0)
+#q

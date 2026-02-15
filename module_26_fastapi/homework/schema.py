@@ -14,7 +14,7 @@ class DetailsRecipes(BaseModel):
     description: str
     time_min: int
 
-
+#q
 class Recipe(BaseModel):
     """Схема для создания рецепта"""
     name: str
