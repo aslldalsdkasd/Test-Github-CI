@@ -20,13 +20,13 @@ jobs:
           pip install pytest mypy isort[pyproject] flake8 black
       
       - name: Run mypy
-        run: mypy src/
+        run: mypy .
       
       - name: Check isort
-        run: isort --check-only --diff src/
+        run: isort --check-only --diff .
       
       - name: Run flake8
-        run: flake8 src/
+        run: flake8 .
       
       - name: Check black
-        run: black --diff --check src/
+        run: black --diff --check .
