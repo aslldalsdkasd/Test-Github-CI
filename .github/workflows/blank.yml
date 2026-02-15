@@ -20,16 +20,16 @@ jobs:
           
       
       - name: Run mypy
-        run: mypy /scr
+        run: mypy /crs
       
       - name: Check isort
-        run: isort --check-only --diff /scr
+        run: isort --check-only --diff /crs
       
       - name: Run flake8
-        run: flake8 /scr
+        run: flake8 /crs
       
       - name: Check black
-        run: black --diff --check /csr
+        run: black --diff --check /crs
 
       - name: Run pytest
         run: pytest test/ -v
