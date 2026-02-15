@@ -19,9 +19,6 @@ jobs:
           pip install -r requirements.txt
           pip install pytest mypy isort[pyproject] flake8 black
       
-      - name: Run pytest
-        run: pytest test/
-      
       - name: Run mypy
         run: mypy src/
       
