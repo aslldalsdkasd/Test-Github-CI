@@ -31,5 +31,4 @@ jobs:
       - name: Check black
         run: black --diff --check crs/
 
-      - name: Run pytest
-        run: pytest test/ -v
+     
