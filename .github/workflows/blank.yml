@@ -18,6 +18,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r .github/workflows/requirements.txt
           pip install pytest mypy isort[pyproject] flake8 black
+          pip install fastapi uvicorn[standard] pytest httpx
+          pip install mypy isort[pyproject] flake8 black
+          pip install sqlalchemy[asyncio] types-sqlalchemy
       
       - name: Run mypy
         run: mypy .
